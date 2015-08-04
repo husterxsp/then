@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>然后</title>
+    <meta name="description" content="然后,故事接龙">
+    <meta name="keywords" content="冰岩作坊,然后App" />
+    <meta name="author" content="冰岩作坊" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="image/favicon.ico"/>
+    <script type="text/javascript" defer>
+        var userAgent = navigator.userAgent.toLowerCase();
+        var head = document.head || document.getElementsByTagName("head")[0];
+        if(userAgent.match(/ipad|iphone|ipod|android/)){
+            head.insertAdjacentHTML("beforeend",'<link rel="stylesheet" type="text/css" href="css/download_mobile.css">');
+        }else {
+             head.insertAdjacentHTML("beforeend",'<link rel="stylesheet" type="text/css" href="css/download_web.css">');
+        }
+    </script>
+</head>
+<body>
+<div id="wraper">
+    <div id="main">
+        <div class="content">
+            <div id="logo_then">
+                <div class="logo"><img src="./image/logo.png"></div>
+                <div class="then_begin">
+                    <div class="then"><img src="./image/then.png"></div>
+                    <div class="begin"><img src="./image/begin.png"></div>                      
+                </div>
+            </div>
+            <div id="scan_download">
+                <div class="ios_download">
+                    <img src="./image/scan_ios.png">
+                    <h1>iOS</h1>
+                </div>
+                <div class="Android_download">
+                    <img src="./image/scan_android.png">
+                    <h1>Android</h1>
+                </div>
+            </div>
+            <a href="#" id="click_download">点击此处下载</a>  
+        </div>
+        <div class="content">
+            <div id="phone"><img src="./image/phone.png"></div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            <span>友情链接:</span>
+            <a href="http://www.bingyan.net/" target="_blank">冰岩作坊</a>
+            <a href="http://app.hustonline.net/" target="_blank">大软坊</a>
+            <a href="http://hustpass.hustonline.net/" target="_blank">华中大校园通</a>
+            <a href="http://itunes.apple.com/cn/app/yi-shun-1.2miao-shi-pin-hui/id923680802?l=en&mt=8" target="_blank">一瞬</a>
+            <a href="http://www.bingyan.net/" target="_blank">关于我们</a>
+        </p>
+        <p>- powered by bingyan studio -</p>
+    </footer>
+</div>
+<script type="text/javascript">
+    var userAgent = navigator.userAgent.toLowerCase();
+    var click_download = document.getElementById("click_download");
+    if(userAgent.match(/ipad|iphone|ipod/)){
+        click_download.setAttribute("href", "#");
+        if(userAgent.match(/ipad/)){
+            document.body.style.backgroundImage = "url(./image/background_web.png)";
+        }
+    }else if(userAgent.match(/android/)){
+        click_download.setAttribute("href", "#");
+    }
+</script>
+</body>
+</html>

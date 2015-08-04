@@ -1,0 +1,78 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+ul,
+ol,
+li,
+p,
+span,
+input,
+button,
+img,
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html,
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+body {
+    background-image: url(../image/background_mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#wraper {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.content {
+    width: 100%;
+    margin-top: 20%;
+}
+.then {
+    margin: 30px 0 20px;
+}
+.then > img {
+    width: 25%;
+}
+.begin > img {
+    width: 40%;
+}
+#click_download {
+    font-size: 20px;
+    line-height: 55px;
+    display: block;
+    width: 195px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 95px;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    background-color: #ffc73c;
+}
+.content:nth-child(2),
+#scan_download,
+footer {
+    display: none;
+}
